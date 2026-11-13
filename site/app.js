@@ -173,7 +173,7 @@ function createCard(item) {
   card.querySelector(".show-card__length").textContent =
     episodeFormat(item.runtime) === "short" ? "Short drama" : item.runtime ? estimatedTime(item) : "Episode length unknown";
   const badge = card.querySelector(".show-card__badge");
-  badge.textContent = state.view === "upcoming" ? relativeLabel(item) : "Season complete";
+  badge.textContent = state.view === "upcoming" ? relativeLabel(item) : "Binge-ready";
   badge.classList.toggle("show-card__badge--upcoming", state.view === "upcoming");
 
   const save = card.querySelector(".save-button");
@@ -236,8 +236,8 @@ function updateCounts() {
     matchesLength(item, state.length) && (!state.drama || item.drama === state.drama));
   const ready = items.filter(isReady).length;
   const upcoming = items.length - ready;
-  elements.readyCount.textContent = `${ready.toLocaleString()} complete / ${upcoming.toLocaleString()} coming up`;
-  $("[data-view='ready']").textContent = `Ready now (${ready.toLocaleString()})`;
+  elements.readyCount.textContent = `${ready.toLocaleString()} binge-ready / ${upcoming.toLocaleString()} coming up`;
+  $("[data-view='ready']").textContent = `Binge-ready (${ready.toLocaleString()})`;
   $("[data-view='upcoming']").textContent = `Coming up (${upcoming.toLocaleString()})`;
   for (const drama of DRAMAS) {
     const count = allItems().filter((item) => item.drama === drama.id && matchesLength(item, state.length) && forTiming(item)).length;

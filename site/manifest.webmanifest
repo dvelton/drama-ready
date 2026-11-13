@@ -1,7 +1,7 @@
 {
   "name": "Drama Ready",
   "short_name": "Drama Ready",
-  "description": "Complete K-drama, C-drama, and J-drama seasons, without weekly waiting.",
+  "description": "Skip the weekly episode drip-feed. Know when K-drama, C-drama, and J-drama seasons are binge-ready.",
   "start_url": "/drama-ready/",
   "scope": "/drama-ready/",
   "display": "standalone",

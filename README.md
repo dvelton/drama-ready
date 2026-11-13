@@ -1,13 +1,15 @@
 # Drama Ready
 
-Find K-drama, C-drama, and J-drama seasons that have finished airing, and see when upcoming seasons are scheduled to finish.
+Find out when K-drama, C-drama, and J-drama seasons are **binge-ready**.
+
+For fans who'd rather watch the whole season than wait a week for the next episode. Skip the episode drip-feed: see what's binge-ready now and when upcoming seasons are scheduled to finish.
 
 **Open the app: https://dvelton.github.io/drama-ready/**
 
 ## How to use it
 
 1. Pick All dramas, K-drama, C-drama, or J-drama.
-2. Browse Ready now or Coming up. Results are ordered by the original season finale date.
+2. Browse Binge-ready or Coming up to plan your next whole-season binge. Results are ordered by the original season finale date.
 3. Search a title, including alternate and original-language titles listed by TVMaze.
 4. Save a season for later or mark it watched. Saved only brings back your saved seasons; Hide watched clears finished shows out of your way.
 5. Tap Find on Viki to open a search with the show's title already entered. To use iQIYI, WeTV, Netflix, or JustWatch instead, choose it under Streaming shortcut. The app remembers that service in this browser.
@@ -30,7 +32,7 @@ A scheduled GitHub Actions job downloads public broadcast and streaming schedule
 
 A season enters the feed only when the scheduled final episode matches TVMaze's published season episode count, any published end date agrees, and no known later episode contradicts it. A stopped weekly schedule or a gap between episodes does not qualify as a confirmed finale.
 
-Broadcast episodes become complete after the scheduled start plus the episode runtime; streaming episodes use the published release timestamp. Dates describe the original release. A streaming service may release episodes or subtitles later.
+Broadcast episodes become complete after the scheduled start plus the episode runtime; streaming episodes use the published release timestamp. "Binge-ready" means the season has finished its original release. Your streaming service may release episodes or subtitles later.
 
 The app is a static website. Your browser downloads the prepared list rather than making hundreds of API requests. Posters load from TVMaze. Supported browsers cache the app and previously loaded data for offline browsing; opening a streaming service requires a connection.
 
@@ -77,6 +79,6 @@ This project deploys the `site/` folder to GitHub Pages with the included workfl
 
 ## Credits and licensing
 
-Built by Dan Velton, based on [Binge Ready](https://github.com/dvelton/binge-ready).
+Based on [Binge Ready](https://github.com/dvelton/binge-ready).
 
 Application code is MIT licensed. TVMaze data, including the adapted dataset and RSS feed, is separately attributed and licensed under CC BY-SA 4.0; see [DATA-LICENSE.md](DATA-LICENSE.md). Streaming-service names identify outbound destinations and do not imply endorsement or partnership.

@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#14151b">
-    <meta name="description" content="Find complete K-drama, C-drama, and J-drama seasons. See upcoming finales, save your next watch, and find shows on your favorite streaming service.">
+    <meta name="description" content="Skip the weekly episode drip-feed. Find binge-ready K-drama, C-drama, and J-drama seasons, and see when upcoming seasons are ready to binge.">
     <meta property="og:title" content="Drama Ready">
-    <meta property="og:description" content="K-drama, C-drama, J-drama. Start when the season ends.">
+    <meta property="og:description" content="Skip the episode drip-feed. Know when K-drama, C-drama, and J-drama seasons are binge-ready.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dvelton.github.io/drama-ready/">
     <meta property="og:image" content="https://dvelton.github.io/drama-ready/social-card.svg">
@@ -15,7 +15,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
-    <title>Drama Ready - Complete K-drama, C-drama, and J-drama seasons</title>
+    <title>Drama Ready - Binge-ready K-drama, C-drama, and J-drama</title>
   </head>
   <body>
     <a class="skip-link" href="#feed">Skip to dramas</a>
@@ -27,8 +27,8 @@
         </a>
         <div class="hero__copy">
           <p class="eyebrow">K-drama / C-drama / J-drama</p>
-          <h1>Your next drama. <br>All at once.</h1>
-          <p class="hero__lede">Find seasons that have finished airing and see what's nearly there. Save your next watch. Skip the weekly wait.</p>
+          <h1>Start when it's <br>binge-ready.</h1>
+          <p class="hero__lede">Skip the weekly episode drip-feed. See which seasons are binge-ready now and when upcoming seasons are scheduled to finish.</p>
         </div>
         <div class="hero__status">
           <span id="ready-count">Loading dramas...</span>
@@ -46,7 +46,7 @@
             <button type="button" data-drama="japanese" aria-pressed="false">J-drama <span class="drama-count"></span></button>
           </div>
           <div class="view-switch" role="group" aria-label="Season completion">
-            <button type="button" data-view="ready" class="is-active" aria-pressed="true">Ready now</button>
+            <button type="button" data-view="ready" class="is-active" aria-pressed="true">Binge-ready</button>
             <button type="button" data-view="upcoming" aria-pressed="false">Coming up</button>
           </div>
           <label class="search">
@@ -95,7 +95,7 @@
       <section class="results-summary" aria-live="polite" aria-atomic="true">
         <div>
           <p id="result-count" tabindex="-1">Loading the drama list...</p>
-          <p class="coverage-note">"Ready" means the original season has finished. Streaming access and subtitles can follow later.</p>
+          <p class="coverage-note">"Binge-ready" means the season has finished its original release. Streaming access and subtitles can follow later.</p>
         </div>
         <button id="clear-filters" type="button" hidden>Reset filters</button>
       </section>
@@ -131,7 +131,7 @@
         <div class="show-card__poster-wrap">
           <img class="show-card__poster" alt="" loading="lazy" decoding="async" width="210" height="295" referrerpolicy="no-referrer">
           <div class="show-card__placeholder" aria-hidden="true"></div>
-          <span class="show-card__badge">Season complete</span>
+          <span class="show-card__badge">Binge-ready</span>
         </div>
         <div class="show-card__body">
           <div>

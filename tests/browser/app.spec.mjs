@@ -116,7 +116,7 @@ test("upcoming and original-network/genre filters work without claiming streamin
   await expect(page.getByRole("heading", { name: "Tomorrow's Promise" })).toBeVisible();
   await expect(page.locator(".watched-button")).toHaveCount(0);
   await expect(page.locator("#hide-watched-control")).toBeHidden();
-  await page.getByRole("button", { name: /Ready now/ }).click();
+  await page.getByRole("button", { name: /Binge-ready/ }).click();
   await page.locator(".more-filters summary").click();
   await page.getByRole("combobox", { name: "Original network / platform", exact: true }).selectOption("Viki");
   await expect(page.locator(".show-card")).toHaveCount(1);
