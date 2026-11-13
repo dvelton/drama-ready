@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#14151b"/>
+  <circle cx="1030" cy="20" r="360" fill="#b8e3d3" opacity=".08"/>
+  <path
+    d="M174 126a92 92 0 1 0 19 128"
+    fill="none"
+    stroke="#b8e3d3"
+    stroke-linecap="round"
+    stroke-width="38"
+  />
+  <path d="m186 222 44 33-52 12Z" fill="#b8e3d3"/>
+  <text x="110" y="400" fill="#f5f1e8" font-family="Georgia, serif" font-size="108">
+    Drama Ready
+  </text>
+  <text x="116" y="485" fill="#b7b6c4" font-family="Arial, sans-serif" font-size="38">
+    K-drama. C-drama. J-drama. All at once.
+  </text>
+</svg>

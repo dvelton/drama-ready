@@ -1,0 +1,87 @@
+name: Refresh data and deploy Pages
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "17 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version: 22
+
+      - name: Install test dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Restore TVMaze cache
+        if: github.event_name != 'push'
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+        with:
+          path: data-cache
+          key: drama-tvmaze-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            drama-tvmaze-${{ runner.os }}-
+
+      - name: Refresh finale data
+        if: github.event_name != 'push'
+        run: npm run refresh
+
+      - name: Test and validate
+        run: npm run check
+
+      - name: Install test browsers
+        run: npx --no-install playwright install --with-deps chromium webkit
+
+      - name: Test desktop and mobile browsing
+        run: npm run test:browser
+
+      - name: Save refreshed data
+        if: github.event_name != 'push'
+        run: |
+          if git diff --quiet -- site/data/finales.json site/feed.xml; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/finales.json site/feed.xml
+          git commit -m "Refresh finale data"
+          git push
+
+      - name: Configure Pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346

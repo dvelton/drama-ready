@@ -1,0 +1,18 @@
+{
+  "name": "Drama Ready",
+  "short_name": "Drama Ready",
+  "description": "Complete K-drama, C-drama, and J-drama seasons, without weekly waiting.",
+  "start_url": "/drama-ready/",
+  "scope": "/drama-ready/",
+  "display": "standalone",
+  "background_color": "#14151b",
+  "theme_color": "#14151b",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

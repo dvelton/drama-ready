@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dvelton.github.io/drama-ready/sitemap.xml

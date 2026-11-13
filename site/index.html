@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#14151b">
+    <meta name="description" content="Find complete K-drama, C-drama, and J-drama seasons. See upcoming finales, save your next watch, and find shows on your favorite streaming service.">
+    <meta property="og:title" content="Drama Ready">
+    <meta property="og:description" content="K-drama, C-drama, J-drama. Start when the season ends.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dvelton.github.io/drama-ready/">
+    <meta property="og:image" content="https://dvelton.github.io/drama-ready/social-card.svg">
+    <link rel="canonical" href="https://dvelton.github.io/drama-ready/">
+    <link rel="alternate" type="application/rss+xml" title="Drama Ready" href="feed.xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <title>Drama Ready - Complete K-drama, C-drama, and J-drama seasons</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#feed">Skip to dramas</a>
+    <header class="hero">
+      <div class="hero__inner">
+        <a class="brand" href="./" aria-label="Drama Ready home">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span>Drama Ready</span>
+        </a>
+        <div class="hero__copy">
+          <p class="eyebrow">K-drama / C-drama / J-drama</p>
+          <h1>Your next drama. <br>All at once.</h1>
+          <p class="hero__lede">Find seasons that have finished airing and see what's nearly there. Save your next watch. Skip the weekly wait.</p>
+        </div>
+        <div class="hero__status">
+          <span id="ready-count">Loading dramas...</span>
+          <span id="updated-at"></span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="controls" aria-label="Browse and filter dramas">
+        <div class="controls__inner">
+          <div class="drama-switch" role="group" aria-label="Drama category">
+            <button type="button" data-drama="" class="is-active" aria-pressed="true">All dramas</button>
+            <button type="button" data-drama="korean" aria-pressed="false">K-drama <span class="drama-count"></span></button>
+            <button type="button" data-drama="chinese" aria-pressed="false">C-drama <span class="drama-count"></span></button>
+            <button type="button" data-drama="japanese" aria-pressed="false">J-drama <span class="drama-count"></span></button>
+          </div>
+          <div class="view-switch" role="group" aria-label="Season completion">
+            <button type="button" data-view="ready" class="is-active" aria-pressed="true">Ready now</button>
+            <button type="button" data-view="upcoming" aria-pressed="false">Coming up</button>
+          </div>
+          <label class="search">
+            <span class="visually-hidden">Search titles, alternate names, genres, or original networks</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.4-4.4m2.4-5.1a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+            <input id="search" type="search" placeholder="Search a drama or alternate title" autocomplete="off">
+          </label>
+          <div class="range" role="group" aria-label="Finale date range">
+            <button type="button" data-range="7" aria-pressed="false">7 days</button>
+            <button type="button" data-range="30" class="is-active" aria-pressed="true">30 days</button>
+            <button type="button" data-range="90" aria-pressed="false">90 days</button>
+            <button type="button" data-range="all" aria-pressed="false">All dates</button>
+          </div>
+          <div class="length-row">
+            <div class="length-switch" role="group" aria-label="Episode length">
+              <button type="button" data-length="standard" class="is-active" aria-pressed="true">Standard length</button>
+              <button type="button" data-length="short" aria-pressed="false">Short dramas</button>
+              <button type="button" data-length="all" aria-pressed="false">Any length</button>
+            </div>
+            <span id="length-note">20+ min per episode, plus shows with unlisted runtimes.</span>
+          </div>
+          <div class="personal-filters">
+            <label class="toggle"><input id="saved-only" type="checkbox"><span>Saved only</span></label>
+            <label id="hide-watched-control" class="toggle"><input id="hide-watched" type="checkbox"><span>Hide watched</span></label>
+          </div>
+          <details class="more-filters">
+            <summary>Genre and original network</summary>
+            <div class="selects">
+              <label><span>Genre</span><select id="genre"><option value="">All genres</option></select></label>
+              <label><span>Original network / platform</span><select id="service"><option value="">All original networks</option></select></label>
+            </div>
+            <p>Original networks describe the first release, not where you can stream a show today.</p>
+          </details>
+          <details class="stream-settings">
+            <summary>Streaming shortcut: <span id="streaming-name">Viki</span></summary>
+            <label><span>Find shows on</span><select id="streaming-service"></select></label>
+            <p>Each card opens a title search on your chosen service in a new tab. Direct show-page links appear when supplied by TVMaze. These are shortcuts, not verified availability; confirm your region, season, subscription, and subtitles with the service.</p>
+          </details>
+        </div>
+      </section>
+      <div class="notices">
+        <p id="offline-note" class="notice" hidden>You're offline. Previously loaded drama data may still be available. Streaming links need an internet connection.</p>
+        <p id="stale-note" class="notice" hidden>This list hasn't refreshed in more than two days. Check the show's source before relying on an upcoming date.</p>
+        <p id="storage-note" class="notice" hidden>Your browser couldn't save your choices. They will last for this visit only.</p>
+      </div>
+      <section class="results-summary" aria-live="polite" aria-atomic="true">
+        <div>
+          <p id="result-count" tabindex="-1">Loading the drama list...</p>
+          <p class="coverage-note">"Ready" means the original season has finished. Streaming access and subtitles can follow later.</p>
+        </div>
+        <button id="clear-filters" type="button" hidden>Reset filters</button>
+      </section>
+      <div id="feed" class="feed" tabindex="-1"></div>
+      <div class="load-more"><button id="show-more" type="button" hidden>Show more</button></div>
+      <section id="empty-state" class="empty-state" hidden>
+        <h2>No dramas match just yet.</h2>
+        <p>Try Any length, All dates, or reset your filters. Only seasons with a confirmed scheduled ending appear.</p>
+        <button type="button" data-clear-filters>Reset filters</button>
+      </section>
+      <section id="error-state" class="empty-state" hidden>
+        <h2>The drama list couldn't load.</h2>
+        <p>Check your connection, then try again.</p>
+        <button type="button" data-retry>Try again</button>
+      </section>
+      <noscript><p class="notice">Please enable JavaScript to search and filter the drama list. You can also read the <a href="feed.xml">RSS feed</a>.</p></noscript>
+    </main>
+    <footer>
+      <div>
+        <p class="footer-brand">Drama Ready</p>
+        <p>Korean-, Chinese-, and Japanese-language live-action series. C-drama includes Taiwan and Hong Kong. No popularity cutoff.</p>
+        <p>120 days of recent finales and up to 180 days of published upcoming finales. Missing or unconfirmed dates aren't guessed.</p>
+        <p>Schedule data from <a href="https://www.tvmaze.com/" rel="external">TVMaze</a> under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="external">CC BY-SA 4.0</a>. Dates can change.</p>
+        <p>No account needed. Saved and watched choices stay in this browser; they don't sync between devices. Posters load from TVMaze. Streaming shortcuts open external sites.</p>
+      </div>
+      <nav aria-label="Project links">
+        <a href="feed.xml">RSS</a>
+        <a href="https://github.com/dvelton/drama-ready">Source</a>
+      </nav>
+    </footer>
+    <template id="card-template">
+      <article class="show-card">
+        <div class="show-card__poster-wrap">
+          <img class="show-card__poster" alt="" loading="lazy" decoding="async" width="210" height="295" referrerpolicy="no-referrer">
+          <div class="show-card__placeholder" aria-hidden="true"></div>
+          <span class="show-card__badge">Season complete</span>
+        </div>
+        <div class="show-card__body">
+          <div>
+            <p class="show-card__category"></p>
+            <h3 class="show-card__title"><a></a></h3>
+            <p class="show-card__native"></p>
+            <p class="show-card__season"></p>
+          </div>
+          <dl class="show-card__facts">
+            <div><dt>Season</dt><dd class="show-card__episodes"></dd></div>
+            <div><dt>Episode length</dt><dd class="show-card__runtime"></dd></div>
+          </dl>
+          <div>
+            <p class="show-card__genres"></p>
+            <p class="show-card__length"></p>
+          </div>
+          <div class="show-card__streaming">
+            <a class="stream-link" target="_blank" rel="noopener noreferrer external"></a>
+            <a class="official-link" target="_blank" rel="noopener noreferrer external"></a>
+          </div>
+          <div class="show-card__actions">
+            <button class="icon-button save-button" type="button"></button>
+            <button class="icon-button watched-button" type="button"></button>
+            <a class="details-link" target="_blank" rel="noopener noreferrer external">Details</a>
+          </div>
+          <p class="show-card__service"></p>
+        </div>
+      </article>
+    </template>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
