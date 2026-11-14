@@ -4,7 +4,7 @@
     <title>Drama Ready</title>
     <link>https://dvelton.github.io/drama-ready/</link>
     <description>Complete K-drama, C-drama, and J-drama seasons, ordered by original-release finale date.</description>
-    <lastBuildDate>Fri, 13 Nov 2026 22:28:57 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 12:23:45 GMT</lastBuildDate>
     <item>
       <title>Destined To Be Phoenix - Season 1</title>
       <link>https://dvelton.github.io/drama-ready/#show-95314-season-1</link>
@@ -405,6 +405,13 @@
       <description>63 episodes. Original-release finale: 2026-10-26. Check your streaming service for regional access and subtitles.</description>
     </item>
     <item>
+      <title>Love Song in the Glimmer - Season 1</title>
+      <link>https://dvelton.github.io/drama-ready/#show-93782-season-1</link>
+      <guid isPermaLink="false">show-93782-season-1:2026-10-25</guid>
+      <pubDate>Sun, 25 Oct 2026 12:00:00 GMT</pubDate>
+      <description>69 episodes. Original-release finale: 2026-10-25. Check your streaming service for regional access and subtitles.</description>
+    </item>
+    <item>
       <title>The Hustler&apos;s Gambit - Season 1</title>
       <link>https://dvelton.github.io/drama-ready/#show-95059-season-1</link>
       <guid isPermaLink="false">show-95059-season-1:2026-10-24</guid>
@@ -697,13 +704,6 @@
       <guid isPermaLink="false">show-93659-season-1:2026-10-10</guid>
       <pubDate>Sat, 10 Oct 2026 12:00:00 GMT</pubDate>
       <description>23 episodes. Original-release finale: 2026-10-10. Check your streaming service for regional access and subtitles.</description>
-    </item>
-    <item>
-      <title>Irreplaceable - Season 1</title>
-      <link>https://dvelton.github.io/drama-ready/#show-86432-season-1</link>
-      <guid isPermaLink="false">show-86432-season-1:2026-10-10</guid>
-      <pubDate>Sat, 10 Oct 2026 12:00:00 GMT</pubDate>
-      <description>20 episodes. Original-release finale: 2026-10-10. Check your streaming service for regional access and subtitles.</description>
     </item>
   </channel>
 </rss>
