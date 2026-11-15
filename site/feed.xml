@@ -4,7 +4,21 @@
     <title>Drama Ready</title>
     <link>https://dvelton.github.io/drama-ready/</link>
     <description>Complete K-drama, C-drama, and J-drama seasons, ordered by original-release finale date.</description>
-    <lastBuildDate>Sat, 14 Nov 2026 12:23:45 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 12:23:59 GMT</lastBuildDate>
+    <item>
+      <title>When I Meet the Moon - Season 1</title>
+      <link>https://dvelton.github.io/drama-ready/#show-77098-season-1</link>
+      <guid isPermaLink="false">show-77098-season-1:2026-11-15</guid>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 GMT</pubDate>
+      <description>27 episodes. Original-release finale: 2026-11-15. Check your streaming service for regional access and subtitles.</description>
+    </item>
+    <item>
+      <title>Doctor X: Mafia in White - Season 1</title>
+      <link>https://dvelton.github.io/drama-ready/#show-91309-season-1</link>
+      <guid isPermaLink="false">show-91309-season-1:2026-11-14</guid>
+      <pubDate>Sat, 14 Nov 2026 12:00:00 GMT</pubDate>
+      <description>12 episodes. Original-release finale: 2026-11-14. Check your streaming service for regional access and subtitles.</description>
+    </item>
     <item>
       <title>Destined To Be Phoenix - Season 1</title>
       <link>https://dvelton.github.io/drama-ready/#show-95314-season-1</link>
@@ -25,6 +39,13 @@
       <guid isPermaLink="false">show-93724-season-1:2026-11-13</guid>
       <pubDate>Fri, 13 Nov 2026 12:00:00 GMT</pubDate>
       <description>12 episodes. Original-release finale: 2026-11-13. Check your streaming service for regional access and subtitles.</description>
+    </item>
+    <item>
+      <title>Thirty-Six Stratagems: Slay - Season 1</title>
+      <link>https://dvelton.github.io/drama-ready/#show-95113-season-1</link>
+      <guid isPermaLink="false">show-95113-season-1:2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 12:00:00 GMT</pubDate>
+      <description>31 episodes. Original-release finale: 2026-11-13. Check your streaming service for regional access and subtitles.</description>
     </item>
     <item>
       <title>Fu Ren Shou Xia Liu Qing - Season 1</title>
@@ -683,27 +704,6 @@
       <guid isPermaLink="false">show-94967-season-1:2026-10-11</guid>
       <pubDate>Sun, 11 Oct 2026 12:00:00 GMT</pubDate>
       <description>12 episodes. Original-release finale: 2026-10-11. Check your streaming service for regional access and subtitles.</description>
-    </item>
-    <item>
-      <title>She&apos;s Wild Fire - Season 1</title>
-      <link>https://dvelton.github.io/drama-ready/#show-93178-season-1</link>
-      <guid isPermaLink="false">show-93178-season-1:2026-10-11</guid>
-      <pubDate>Sun, 11 Oct 2026 12:00:00 GMT</pubDate>
-      <description>24 episodes. Original-release finale: 2026-10-11. Check your streaming service for regional access and subtitles.</description>
-    </item>
-    <item>
-      <title>Falling Beyond the Rules - Season 1</title>
-      <link>https://dvelton.github.io/drama-ready/#show-94951-season-1</link>
-      <guid isPermaLink="false">show-94951-season-1:2026-10-10</guid>
-      <pubDate>Sat, 10 Oct 2026 12:00:00 GMT</pubDate>
-      <description>82 episodes. Original-release finale: 2026-10-10. Check your streaming service for regional access and subtitles.</description>
-    </item>
-    <item>
-      <title>Fatal Proximity to Him - Season 1</title>
-      <link>https://dvelton.github.io/drama-ready/#show-93659-season-1</link>
-      <guid isPermaLink="false">show-93659-season-1:2026-10-10</guid>
-      <pubDate>Sat, 10 Oct 2026 12:00:00 GMT</pubDate>
-      <description>23 episodes. Original-release finale: 2026-10-10. Check your streaming service for regional access and subtitles.</description>
     </item>
   </channel>
 </rss>
