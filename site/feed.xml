@@ -4,7 +4,21 @@
     <title>Drama Ready</title>
     <link>https://dvelton.github.io/drama-ready/</link>
     <description>Complete K-drama, C-drama, and J-drama seasons, ordered by original-release finale date.</description>
-    <lastBuildDate>Mon, 16 Nov 2026 12:35:19 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 12:27:07 GMT</lastBuildDate>
+    <item>
+      <title>Sunshine Through The Rain - Season 1</title>
+      <link>https://dvelton.github.io/drama-ready/#show-88889-season-1</link>
+      <guid isPermaLink="false">show-88889-season-1:2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
+      <description>24 episodes. Original-release finale: 2026-11-17. Check your streaming service for regional access and subtitles.</description>
+    </item>
+    <item>
+      <title>War of Thorns - Season 1</title>
+      <link>https://dvelton.github.io/drama-ready/#show-86784-season-1</link>
+      <guid isPermaLink="false">show-86784-season-1:2026-11-16</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 GMT</pubDate>
+      <description>25 episodes. Original-release finale: 2026-11-16. Check your streaming service for regional access and subtitles.</description>
+    </item>
     <item>
       <title>When I Meet the Moon - Season 1</title>
       <link>https://dvelton.github.io/drama-ready/#show-77098-season-1</link>
@@ -690,20 +704,6 @@
       <guid isPermaLink="false">show-94781-season-1:2026-10-12</guid>
       <pubDate>Mon, 12 Oct 2026 12:00:00 GMT</pubDate>
       <description>12 episodes. Original-release finale: 2026-10-12. Check your streaming service for regional access and subtitles.</description>
-    </item>
-    <item>
-      <title>Lamp of Tied Bones - Season 1</title>
-      <link>https://dvelton.github.io/drama-ready/#show-94965-season-1</link>
-      <guid isPermaLink="false">show-94965-season-1:2026-10-11</guid>
-      <pubDate>Sun, 11 Oct 2026 12:00:00 GMT</pubDate>
-      <description>50 episodes. Original-release finale: 2026-10-11. Check your streaming service for regional access and subtitles.</description>
-    </item>
-    <item>
-      <title>Rise of the Mystic Outcast - Season 1</title>
-      <link>https://dvelton.github.io/drama-ready/#show-94967-season-1</link>
-      <guid isPermaLink="false">show-94967-season-1:2026-10-11</guid>
-      <pubDate>Sun, 11 Oct 2026 12:00:00 GMT</pubDate>
-      <description>12 episodes. Original-release finale: 2026-10-11. Check your streaming service for regional access and subtitles.</description>
     </item>
   </channel>
 </rss>
