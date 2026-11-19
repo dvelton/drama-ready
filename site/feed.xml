@@ -4,7 +4,14 @@
     <title>Drama Ready</title>
     <link>https://dvelton.github.io/drama-ready/</link>
     <description>Complete K-drama, C-drama, and J-drama seasons, ordered by original-release finale date.</description>
-    <lastBuildDate>Wed, 18 Nov 2026 12:26:49 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 12:27:01 GMT</lastBuildDate>
+    <item>
+      <title>Let&apos;s Go - Season 1</title>
+      <link>https://dvelton.github.io/drama-ready/#show-78021-season-1</link>
+      <guid isPermaLink="false">show-78021-season-1:2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 GMT</pubDate>
+      <description>40 episodes. Original-release finale: 2026-11-19. Check your streaming service for regional access and subtitles.</description>
+    </item>
     <item>
       <title>Sunshine Through The Rain - Season 1</title>
       <link>https://dvelton.github.io/drama-ready/#show-88889-season-1</link>
@@ -18,6 +25,13 @@
       <guid isPermaLink="false">show-81395-season-1:2026-11-17</guid>
       <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
       <description>30 episodes. Original-release finale: 2026-11-17. Check your streaming service for regional access and subtitles.</description>
+    </item>
+    <item>
+      <title>Vow of Autumn - Season 1</title>
+      <link>https://dvelton.github.io/drama-ready/#show-95193-season-1</link>
+      <guid isPermaLink="false">show-95193-season-1:2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
+      <description>22 episodes. Original-release finale: 2026-11-17. Check your streaming service for regional access and subtitles.</description>
     </item>
     <item>
       <title>War of Thorns - Season 1</title>
@@ -690,20 +704,6 @@
       <guid isPermaLink="false">show-95029-season-1:2026-10-14</guid>
       <pubDate>Wed, 14 Oct 2026 12:00:00 GMT</pubDate>
       <description>12 episodes. Original-release finale: 2026-10-14. Check your streaming service for regional access and subtitles.</description>
-    </item>
-    <item>
-      <title>Death is Coming - Season 1</title>
-      <link>https://dvelton.github.io/drama-ready/#show-92783-season-1</link>
-      <guid isPermaLink="false">show-92783-season-1:2026-10-13</guid>
-      <pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate>
-      <description>27 episodes. Original-release finale: 2026-10-13. Check your streaming service for regional access and subtitles.</description>
-    </item>
-    <item>
-      <title>My Spider Neighbor - Season 1</title>
-      <link>https://dvelton.github.io/drama-ready/#show-94812-season-1</link>
-      <guid isPermaLink="false">show-94812-season-1:2026-10-12</guid>
-      <pubDate>Mon, 12 Oct 2026 12:00:00 GMT</pubDate>
-      <description>24 episodes. Original-release finale: 2026-10-12. Check your streaming service for regional access and subtitles.</description>
     </item>
   </channel>
 </rss>
