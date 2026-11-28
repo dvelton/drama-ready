@@ -4,7 +4,14 @@
     <title>Drama Ready</title>
     <link>https://dvelton.github.io/drama-ready/</link>
     <description>Complete K-drama, C-drama, and J-drama seasons, ordered by original-release finale date.</description>
-    <lastBuildDate>Fri, 27 Nov 2026 12:27:40 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 12:25:19 GMT</lastBuildDate>
+    <item>
+      <title>Bound by Time - Season 1</title>
+      <link>https://dvelton.github.io/drama-ready/#show-96051-season-1</link>
+      <guid isPermaLink="false">show-96051-season-1:2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 12:00:00 GMT</pubDate>
+      <description>24 episodes. Original-release finale: 2026-11-28. Check your streaming service for regional access and subtitles.</description>
+    </item>
     <item>
       <title>Beautiful Malice - Season 1</title>
       <link>https://dvelton.github.io/drama-ready/#show-95475-season-1</link>
@@ -34,11 +41,25 @@
       <description>15 episodes. Original-release finale: 2026-11-27. Check your streaming service for regional access and subtitles.</description>
     </item>
     <item>
+      <title>Welcome Back, First Love. - Season 1</title>
+      <link>https://dvelton.github.io/drama-ready/#show-95307-season-1</link>
+      <guid isPermaLink="false">show-95307-season-1:2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 12:00:00 GMT</pubDate>
+      <description>8 episodes. Original-release finale: 2026-11-27. Check your streaming service for regional access and subtitles.</description>
+    </item>
+    <item>
       <title>Ci Sha Fu Jun？De Jia Qian！ - Season 1</title>
       <link>https://dvelton.github.io/drama-ready/#show-95976-season-1</link>
       <guid isPermaLink="false">show-95976-season-1:2026-11-26</guid>
       <pubDate>Thu, 26 Nov 2026 12:00:00 GMT</pubDate>
       <description>56 episodes. Original-release finale: 2026-11-26. Check your streaming service for regional access and subtitles.</description>
+    </item>
+    <item>
+      <title>The Glory Fades - Season 2</title>
+      <link>https://dvelton.github.io/drama-ready/#show-90079-season-2</link>
+      <guid isPermaLink="false">show-90079-season-2:2026-11-26</guid>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 GMT</pubDate>
+      <description>26 episodes. Original-release finale: 2026-11-26. Check your streaming service for regional access and subtitles.</description>
     </item>
     <item>
       <title>Phoenix Rising from the Faint Moon - Season 1</title>
@@ -144,6 +165,13 @@
       <guid isPermaLink="false">show-96052-season-1:2026-11-19</guid>
       <pubDate>Thu, 19 Nov 2026 12:00:00 GMT</pubDate>
       <description>24 episodes. Original-release finale: 2026-11-19. Check your streaming service for regional access and subtitles.</description>
+    </item>
+    <item>
+      <title>Till I See You - Season 1</title>
+      <link>https://dvelton.github.io/drama-ready/#show-94016-season-1</link>
+      <guid isPermaLink="false">show-94016-season-1:2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 GMT</pubDate>
+      <description>13 episodes. Original-release finale: 2026-11-19. Check your streaming service for regional access and subtitles.</description>
     </item>
     <item>
       <title>Faces Reborn - Season 1</title>
@@ -676,34 +704,6 @@
       <guid isPermaLink="false">show-93782-season-1:2026-10-25</guid>
       <pubDate>Sun, 25 Oct 2026 12:00:00 GMT</pubDate>
       <description>69 episodes. Original-release finale: 2026-10-25. Check your streaming service for regional access and subtitles.</description>
-    </item>
-    <item>
-      <title>The Hustler&apos;s Gambit - Season 1</title>
-      <link>https://dvelton.github.io/drama-ready/#show-95059-season-1</link>
-      <guid isPermaLink="false">show-95059-season-1:2026-10-24</guid>
-      <pubDate>Sat, 24 Oct 2026 12:00:00 GMT</pubDate>
-      <description>24 episodes. Original-release finale: 2026-10-24. Check your streaming service for regional access and subtitles.</description>
-    </item>
-    <item>
-      <title>The Last Oath - Season 1</title>
-      <link>https://dvelton.github.io/drama-ready/#show-93884-season-1</link>
-      <guid isPermaLink="false">show-93884-season-1:2026-10-24</guid>
-      <pubDate>Sat, 24 Oct 2026 12:00:00 GMT</pubDate>
-      <description>24 episodes. Original-release finale: 2026-10-24. Check your streaming service for regional access and subtitles.</description>
-    </item>
-    <item>
-      <title>The Missing Piece - Season 1</title>
-      <link>https://dvelton.github.io/drama-ready/#show-94369-season-1</link>
-      <guid isPermaLink="false">show-94369-season-1:2026-10-24</guid>
-      <pubDate>Sat, 24 Oct 2026 12:00:00 GMT</pubDate>
-      <description>15 episodes. Original-release finale: 2026-10-24. Check your streaming service for regional access and subtitles.</description>
-    </item>
-    <item>
-      <title>The Phoenix Perches - Season 1</title>
-      <link>https://dvelton.github.io/drama-ready/#show-92142-season-1</link>
-      <guid isPermaLink="false">show-92142-season-1:2026-10-24</guid>
-      <pubDate>Sat, 24 Oct 2026 12:00:00 GMT</pubDate>
-      <description>24 episodes. Original-release finale: 2026-10-24. Check your streaming service for regional access and subtitles.</description>
     </item>
   </channel>
 </rss>
